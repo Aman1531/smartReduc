@@ -1,6 +1,7 @@
 import { app } from "./functions/initialize.js"
 import { settings } from "./config/settings.js"
 import { transformLinksToObjects } from "./functions/helpers/transformLinksToObjects.js"
+import { apiRoutes } from "./routes/api/posts.js"
 
 // 404 Route
 app.notFound((req, res) => {
@@ -50,5 +51,5 @@ import { loadAdminRoutes, loadThemeRoutes } from "./functions/loadRoutes.js"
 
 loadAdminRoutes()
 loadThemeRoutes()
-
+apiRoutes(app)
 app.startServer()
