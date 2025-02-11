@@ -1,5 +1,5 @@
 ---
-title: "The New Blog-Doc"
+title: "The New Blog-Doc for ticket promo"
 description: "A tiny flame in the darkness of error"
 featuredImage: "/static/images/tiny-flame.avif"
 publish_date: 2023-07-26
