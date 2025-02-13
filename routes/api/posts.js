@@ -24,5 +24,33 @@ export const apiRoutes = (app) => {
            res.end(JSON.stringify(postsByTag));
 	         
        })
+		.get("/api/search/:query", async (req, res) => {
+
+				const { query } = req.params
+				const reg = new RegExp(query, "gi")
+
+				const posts = await processMarkdownPosts(app)
+				const titleSearch = posts.filter((post) => post.frontmatter.title.match(reg))
+				const contentSearch = posts.filter((post) => post.content.match(reg))
+
+				// Concatenate the results of titleSearch and contentSearch
+				const concat = titleSearch.concat(contentSearch)
+
+				// Get the unique result(s) by removing duplicates from concat array
+				const uniqueProps = []
+				const result = concat.filter((post) => {
+					const isDuplicate = uniqueProps.includes(post.frontmatter.title)
+
+					if (!isDuplicate) {
+						uniqueProps.push(post.frontmatter.title)
+
+						return true
+					}
+
+					return false
+				})
+        res.writeHead(200, {"Content-Type": "application/json"})
+        res.end(JSON.stringify(result))
+    })
 
 }
