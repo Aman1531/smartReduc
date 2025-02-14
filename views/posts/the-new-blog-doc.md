@@ -17,7 +17,7 @@ Blog-Doc's latest version proudly employs:
 -   [Marked](https://marked.js.org/): Markdown parser and compiler. Built for speed.
 
 <h2>Motivation & Purpose</h2>
-
+![xxx](static/images/blah.png)
 Blog-Doc was born out of a desire to create something truly efficient and straightforward.<br/>
 I've realized that existing Static Site Generators often came with unnecessary complexities, resembling gasworks more than elegant solutions.<br/>
 Blog-Doc is a passionate response to this challenge, aiming to provide a seamless experience for developers who seek a lightweight, fast, and user-friendly CMS and SSG.

@@ -24,5 +24,6 @@
         "sitemap": "Sitemap",
         "https://github.com/LebCit/blog-doc": "GitHub Repo",
         "bd-admin": "Admin ⚡"
-    }
+    },
+    "adminPass": "admin"
 }

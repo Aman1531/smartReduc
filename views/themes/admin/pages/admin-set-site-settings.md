@@ -31,6 +31,11 @@ After making your changes, click the "Update Site Settings" button. Then, naviga
 -   **Description**: A small image representing your site, often a smaller version of your site's logo.
 -   **Usage**: Displayed in the browser tab and bookmarks.
 
+### Admin Password
+
+-   **Description**: Set password for the admin
+-   **Usage**: only alphanumeric characters are allowed
+
 ### Posts Per Page
 
 -   **Description**: Choose how many posts should be rendered on each page of the blog.

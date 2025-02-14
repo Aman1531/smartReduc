@@ -7,7 +7,6 @@ export const adminSetSiteSettings = async (app, settings, marked, join) => {
 		const parsedAdminSiteSettings = await app.parseMarkdownFile("themes/admin/pages/admin-set-site-settings.md")
 		const { title, description } = parsedAdminSiteSettings.frontmatter
 		const html_admin_content = marked.parse(parsedAdminSiteSettings.content)
-
 		res.render("themes/admin/layouts/index.html", {
 			title,
 			description,
@@ -21,7 +20,6 @@ export const adminSetSiteSettings = async (app, settings, marked, join) => {
 	}).post("/bd-admin/update/site-settings", async (req, res, data) => {
 		// Convert `postsPerPage` from string to number
 		data.postsPerPage = parseInt(data.postsPerPage, 10)
-
 		// Convert `searchFeature` from string to boolean
 		data.searchFeature = data.searchFeature.toLowerCase() === "true"
 

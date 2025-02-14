@@ -92,7 +92,14 @@
 	<input type="text" name="favicon" id="site-favicon" value="{{settings.favicon}}" hidden />
 
 	<hr />
-
+  <div class="form-group">
+      <label for="site-url">
+          Admin Pass
+          <strong>*</strong>
+          :
+      </label>
+      <input type="text" name="adminPass" id="admin-pass" value="{{settings.adminPass}}" required/>
+  </div><hr />
 	<div class="form-group">
 		<label for="site-posts-per-page">
 			Posts Per Page
