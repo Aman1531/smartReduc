@@ -5,45 +5,45 @@ description: "Add, delete, and use images"
 
 # Gallery
 
-All images uploaded to Blog-Doc's gallery are stored in the "images" folder within the "static" directory. You can access these images using a path similar to: `/static/images/my-image.extension`
+Toutes les images téléchargées dans la galerie de Blog-Doc sont stockées dans le dossier « images » du répertoire « static ». Vous pouvez accéder à ces images en utilisant un chemin similaire à : `/static/images/my-image.extension`
 
-## Add images
+## Ajouter des images
 
-To add images to the gallery, click the "Browse" button and select one or more images. You can upload as many images as you like, but be aware that **the total file size of all uploaded images must not exceed 15MB**.
+Pour ajouter des images à la galerie, cliquez sur le bouton « Parcourir » et sélectionnez une ou plusieurs images. Vous pouvez télécharger autant d'images que vous le souhaitez, mais sachez que **la taille totale du fichier de toutes les images téléchargées ne doit pas dépasser 15 Mo**.
 
-Why is this important? Optimizing your images is crucial for ensuring they perform well on the web and enhance the user experience. For image optimization, you can use free online tools such as [Squoosh](https://squoosh.app/), [TinyPNG](https://tinypng.com/), and [Resizing.app](https://resizing.app/), among others.
+Pourquoi est-ce important ? L'optimisation de vos images est essentielle pour garantir leur bonne performance sur le Web et améliorer l'expérience utilisateur. Pour l'optimisation des images, vous pouvez utiliser des outils en ligne gratuits tels que [Squoosh](https://squoosh.app/), [TinyPNG](https://tinypng.com/) et [Resizing.app](https://resizing.app/), entre autres.
 
-After selecting your images, click the "Upload" button to add them to the gallery. You will be redirected to the gallery, where your images will be available.
+Après avoir sélectionné vos images, cliquez sur le bouton « Télécharger » pour les ajouter à la galerie. Vous serez redirigé vers la galerie, où vos images seront disponibles.
 
-## Delete images
+## Supprimer des images
 
-To remove an image from the gallery, first click the "Delete" button associated with the image you wish to remove. A confirmation modal will appear, asking you to confirm the deletion. Click the "Delete" button in the modal to permanently remove the image. Please note that once deleted, the image will no longer be available in the gallery and will also be removed from any page(s) or post(s) where it was previously displayed.
+Pour supprimer une image de la galerie, cliquez d'abord sur le bouton « Supprimer » associé à l'image que vous souhaitez supprimer. Une fenêtre de confirmation apparaîtra, vous demandant de confirmer la suppression. Cliquez sur le bouton « Supprimer » dans la fenêtre pour supprimer définitivement l'image. Veuillez noter qu'une fois supprimée, l'image ne sera plus disponible dans la galerie et sera également supprimée de toutes les pages ou articles où elle était précédemment affichée.
 
-## Use images
+## Utiliser des images
 
-You can incorporate images from the gallery into your pages or posts using the following methods:
+Vous pouvez incorporer des images de la galerie dans vos pages ou articles en utilisant les méthodes suivantes :
 
-1. **Markdown Syntax**: Embed images using the Markdown format `![Image title](image-source "Image alternative text")`. For example:
+1. **Syntaxe Markdown** : intégrez des images en utilisant le format Markdown `![Titre de l'image](image-source "Texte alternatif de l'image")`. Par exemple :
 
-    ```markdown
-    ![Cedar of Lebanon](/static/images/cedar-tree-of-Lebanon.jpg "Mighty Cedar Tree of Lebanon")
-    ```
+```markdown
+![Cèdre du Liban](/static/images/cedar-tree-of-Lebanon.jpg "Le puissant cèdre du Liban")
+```
 
-2. **HTML `<img>` Tag**: Include images using the HTML `<img>` tag, just as you would in a standard HTML file:
+2. **Balise HTML `<img>`** : incluez des images à l'aide de la balise HTML `<img>`, comme vous le feriez dans un fichier HTML standard :
 
-    ```html
-    <img title="Cedar of Lebanon" src="/static/images/cedar-tree-of-Lebanon.jpg" alt="Mighty Cedar Tree of Lebanon" />
-    ```
+```html
+<img title="Cèdre du Liban" src="/static/images/cedar-tree-of-Lebanon.jpg" alt="Le puissant cèdre du Liban" />
+```
 
-3. **External Images**: You can also use images hosted on the Internet. For instance:
+3. **Images externes** : vous pouvez également utiliser des images hébergées sur Internet. Par exemple :
 
-    - Markdown:
-        ```markdown
-        ![Cedar of Lebanon](https://tinyurl.com/483s6hr2 "Mighty Cedar Tree of Lebanon")
-        ```
-    - HTML:
-        ```html
-        <img title="Cedar of Lebanon" src="https://tinyurl.com/483s6hr2" alt="Mighty Cedar Tree of Lebanon" />
-        ```
+- Markdown :
+```markdown
+![Cèdre du Liban](https://tinyurl.com/483s6hr2 "Le puissant cèdre du Liban")
+```
+- HTML :
+```html
+<img title="Cèdre du Liban" src="https://tinyurl.com/483s6hr2" alt="Le puissant cèdre du Liban" />
+```
 
-4. **Image Picker**: Use the "Add an Image" button available in each page and post to select and display a featured image for the page or post from the gallery.
+4. **Sélecteur d'images** : utilisez le bouton « Ajouter une image » disponible sur chaque page et article pour sélectionner et afficher une image en vedette pour la page ou l'article à partir de la galerie.

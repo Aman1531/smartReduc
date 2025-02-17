@@ -6,31 +6,31 @@ href: "/bd-admin"
 
 # Blog-Doc
 
-Welcome to the administration homepage of Blog-Doc.
+Bienvenue sur la page d'accueil de l'administration de Blog-Doc.
 
 ## Administration
 
-Beginning with [version 3.0.0](https://github.com/LebCit/blog-doc/releases/tag/v3.0.0), Blog-Doc has been improved and streamlined with the integration of [LiteNode](https://www.npmjs.com/package/litenode).<br>
-The administration interface of Blog-Doc is now more user-friendly, with each page featuring its own documentation for ease of use and entirely made with [responsive attributes](https://responsive-attributes-generator.pages.dev/).
+À partir de la [version 3.0.0](https://github.com/LebCit/blog-doc/releases/tag/v3.0.0), Blog-Doc a été amélioré et rationalisé avec l'intégration de [LiteNode](https://www.npmjs.com/package/litenode).<br>
+L'interface d'administration de Blog-Doc est désormais plus conviviale, chaque page comportant sa propre documentation pour une utilisation plus facile et entièrement réalisée avec des [attributs réactifs](https://responsive-attributes-generator.pages.dev/).
 
-Kindly consult the comprehensive [documentation](https://blog-doc.pages.dev/) for in-depth and up-to-date information on Blog-Doc's functionalities.
+Veuillez consulter la [documentation](https://blog-doc.pages.dev/) complète pour des informations détaillées et à jour sur les fonctionnalités de Blog-Doc.
 
-## Admin Sections
+## Sections d'administration
 
-The administration interface of Blog-Doc is divided into 4 main sections:
+L'interface d'administration de Blog-Doc est divisée en 4 sections principales :
 
-### Header
+### En-tête
 
-The header includes an administration toolbar featuring links for various actions.
+L'en-tête comprend une barre d'outils d'administration comportant des liens pour diverses actions.
 
-### Sidebar
+### Barre latérale
 
-The left sidebar hosts the primary navigation menu for the administration.
+La barre latérale gauche héberge le menu de navigation principal de l'administration.
 
-### Work Area
+### Zone de travail
 
-The work area is where all user interfaces (UIs) are displayed, each accompanied by its respective documentation.
+La zone de travail est l'endroit où toutes les interfaces utilisateur (IU) sont affichées, chacune accompagnée de sa documentation respective.
 
-### Footer
+### Pied de page
 
-Located at the bottom of the work area, the footer provides additional information and links.
+Situé en bas de la zone de travail, le pied de page fournit des informations et des liens supplémentaires.

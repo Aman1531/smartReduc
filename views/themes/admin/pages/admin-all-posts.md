@@ -6,26 +6,26 @@ href: "/bd-admin/get/all-posts"
 
 # All Posts
 
-All created posts are displayed in a table with pagination, showing 5 posts per page.
+Tous les articles créés sont affichés dans un tableau avec pagination, affichant 5 articles par page.
 
-1. **Pagination**:
+1. **Pagination** :
 
-    - When there are more than 5 posts, pagination buttons are available to navigate through the table.
-    - Pagination buttons are located at the bottom of the table, allowing you to move between different pages of posts.
+    - Lorsqu'il y a plus de 5 posts, des boutons de pagination sont disponibles pour naviguer dans le tableau.
+    - Des boutons de pagination sont situés en bas du tableau, vous permettant de vous déplacer entre les différentes pages de posts.
 
-2. **Search Function**:
+2. **Fonction de recherche** :
 
-    - The table includes a search function that searches across all posts.
-    - The search input is located above the table. As you type, the table dynamically filters the posts to match the search query.
-    - If the search results exceed 5 posts, pagination is applied to the filtered results.
+    - Le tableau comprend une fonction de recherche qui recherche dans tous les messages.
+    - L'entrée de recherche est située au-dessus du tableau. Au fur et à mesure que vous tapez, le tableau filtre dynamiquement les publications pour correspondre à la requête de recherche.
+    - Si les résultats de recherche dépassent 5 posts, la pagination est appliquée aux résultats filtrés.
 
-3. **Sorting**:
+3. **Tri** :
 
-    - Posts can be sorted by clicking on the sorting arrows in the column headers.
-    - Each column header (except for the "Delete" column) has two arrows for sorting: an upward arrow for ascending order and a downward arrow for descending order.
-    - Sorting is applied to the currently displayed search results, ensuring that only the filtered posts are sorted.
+    - Les messages peuvent être triés en cliquant sur les flèches de tri dans les en-têtes de colonnes.
+    - Chaque en-tête de colonne (sauf la colonne "Supprimer") comporte deux flèches de tri : une flèche vers le haut pour l'ordre croissant et une flèche vers le bas pour l'ordre décroissant.
+    - Le tri est appliqué aux résultats de recherche actuellement affichés, garantissant que seules les publications filtrées sont triées.
 
-4. **Deleting Posts**:
-    - To delete a post, click on the bin icon in the "Delete" column.
-    - This will trigger a confirmation modal. If you confirm the deletion, the post and all its associated data will be permanently erased.
-    - Please note that deleted posts cannot be recovered.
+4. **Suppression de messages** :
+    - Pour supprimer une publication, cliquez sur l'icône de la corbeille dans la colonne "Supprimer".
+    - Cela déclenchera un modal de confirmation. Si vous confirmez la suppression, la publication et toutes ses données associées seront définitivement effacées.
+    - Veuillez noter que les messages supprimés ne peuvent pas être récupérés.
