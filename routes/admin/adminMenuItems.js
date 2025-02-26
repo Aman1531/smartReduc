@@ -7,16 +7,16 @@ export const adminMenuItems = [
 	// 	],
 	// },
 	{
-		key: "Posts",
+		key: "Publications",
 		values: [
-			{ item: "All Posts", href: "get/all-posts" },
-			{ item: "Add new", href: "add/new-post" },
+			{ item: "Tous les publications", href: "get/all-posts" },
+			{ item: "Ajouter un nouveau", href: "add/new-post" },
 		],
 	},
 	{
 		key: "Images",
 		values: [
-			{ item: "Gallery", href: "set/images" },
+			  { item: "Galerie", href: "set/images" },
 //			{ item: "Routes", href: "set/routes-images" },
 		],
 	},

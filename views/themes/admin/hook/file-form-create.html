@@ -1,58 +1,57 @@
 <form action="/bd-admin/create-file" method="post" id="file-form-create">
-	<div class="form-group">
-		<label for="file-title">Title</label>
-		<input type="text" name="file[title]" id="file-title" placeholder="Type title here" required />
-	</div>
+<div class="form-group">
+<label for="file-title">Titre</label>
+<input type="text" name="file[title]" id="file-title" placeholder="Saisissez le titre ici" required />
+</div>
 
-	<div class="form-group">
-		<label for="file-description">Description</label>
-		<input type="text" name="file[description]" id="file-description" placeholder="Describe content here" />
-	</div>
+<div class="form-group">
+<label for="file-description">Description</label>
+<input type="text" name="file[description]" id="file-description" placeholder="Décrivez le contenu ici" />
+</div>
 
-	{{include("themes/admin/hook/modals/images-modal.html")}}
-	<button type="button" class="bd-button-light" id="file-image">Add an Image</button>
-	<input type="hidden" name="file[image]" id="file-image-hidden-input" />
+{{include("themes/admin/hook/modals/images-modal.html")}}
+<button type="button" class="bd-button-light" id="file-image">Ajouter une image</button>
+<input type="hidden" name="file[image]" id="file-image-hidden-input" />
 
-	<input type="hidden" name="file[image]" id="file-image-hidden-input" />
+<input type="hidden" name="file[image]" id="file-image-hidden-input" />
 
-	<!-- Dynamic markup separator-->
-	{{#if href == "/bd-admin/add/new-post"}}
-	<div class="form-group">
-		<label for="file-publish-date">Date</label>
-		<input type="date" name="file[publish_date]" id="file-publish-date" required />
-	</div>
+<!-- Séparateur de balisage dynamique-->
+{{#if href == "/bd-admin/add/new-post"}}
+<div class="form-group">
+<label for="file-publish-date">Date</label>
+<input type="date" name="file[publish_date]" id="file-publish-date" required />
+</div>
 
-	<div class="form-group">
-		<label for="file-tags">Tags</label>
-		<input type="text" name="file[tags]" id="file-tags" placeholder="Tag1, Tag2, Tag3..." />
-	</div>
+<div class="form-group">
+<label for="file-tags">Tags</label>
+<input type="text" name="file[tags]" id="file-tags" placeholder="Tag1, Tag2, Tag3..." />
+</div>
 
-	<input type="hidden" name="file[type]" value="posts" />
-	{{#else}}
-	<input type="hidden" name="file[type]" value="pages" />
-	{{/if}}
+<input type="hidden" name="file[type]" value="posts" />
+{{#else}}
+<input type="hidden" name="file[type]" value="pages" />
+{{/if}}
 
-	<fieldset>
-		<legend>Publish or save as draft?</legend>
-		<div>
-			<input type="radio" name="file[published]" id="file-published-true" value="true" required />
-			<label for="file-published-true">Publish</label>
+<fieldset>
+<legend>Publier ou enregistrer comme brouillon ?</legend>
+<div>
+<input type="radio" name="file[published]" id="file-published-true" value="true" required />
+<label for="file-published-true">Publier</label>
 
-			<input type="radio" name="file[published]" id="file-published-false" value="false" />
-			<label for="file-published-false">Save as draft</label>
-		</div>
-	</fieldset>
+<input type="radio" name="file[published]" id="file-published-false" value="false" />
+<label for="file-published-false">Enregistrer comme brouillon</label>
+</div>
+</fieldset>
 
-	{{include("themes/admin/hook/sme.html")}}
+{{include("themes/admin/hook/sme.html")}}
 
-	<!-- Dynamic markup separator -->
-	{{#if href == "/bd-admin/add/new-page"}}
-	<input class="bd-button-grey" type="submit" value="Create new page" />
-	{{#else}}
-	<input class="bd-button-grey" type="submit" value="Create new post" />
-	{{/if}}
+<!-- Séparateur de balisage dynamique -->
+{{#if href == "/bd-admin/add/new-page"}}
+<input class="bd-button-grey" type="submit" value="Créer une nouvelle page" />
+{{#else}}
+<input class="bd-button-grey" type="submit" value="Créer un nouveau message" />
+{{/if}}
 </form>
-
 {{include("themes/admin/hook/modals/validation-error-modal.html")}}
 
 <script type="module">
@@ -83,7 +82,7 @@
 			})
 
 			if (response.ok) {
-				window.location.href = response.url // Redirect on successful submission
+			window.location.href = response.url // Redirect on successful submission
 			} else {
 				const result = await response.json()
 				if (result.error) {
@@ -93,8 +92,8 @@
 				}
 			}
 		} catch (error) {
-			console.error("Error submitting form:", error)
-			alert("An error occurred while creating the file.")
+			  console.error("Error submitting form:", error)
+        alert("Une erreur s'est produite lors de la création du fichier.")
 		}
 	})
 </script>

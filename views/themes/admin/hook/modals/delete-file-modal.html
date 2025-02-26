@@ -8,23 +8,23 @@
 	>
 		<div class="modal-header">
 			<h2 id="deleteFileModalTitle">
-				{{#if href == "/bd-admin/get/all-pages"}}Delete page?!{{#else}}Delete post?!{{/if}}
+				{{#if href == "/bd-admin/get/all-pages"}}Delete page?!{{#else}}Supprimer la publication?!{{/if}}
 			</h2>
 			<button class="close" aria-label="Close">&times;</button>
 		</div>
 		<div class="modal-body" id="deleteFileModalDescription">
 			<h3>File title</h3>
 			<p>
-				By clicking on the
-				<strong>Delete</strong>
-				button, {{#if href == "/bd-admin/get/all-pages"}}the page{{#else}}the post{{/if}} and all its associated
-				data will be permanently erased!
-				<br />
-				Please note that deleted {{#if href == "/bd-admin/get/all-pages"}}pages{{#else}}posts{{/if}} cannot be
-				recovered!
-				<br />
-				This action is irreversible, the {{#if href == "/bd-admin/get/all-pages"}}page{{#else}}post{{/if}} will
-				be forever lost if you confirm the deletion!
+          En cliquant sur le bouton
+          <strong>Supprimer</strong>
+          , {{#if href == "/bd-admin/get/all-pages"}}la page{{#else}}le billet{{/if}} et toutes ses
+          données associées seront définitivement effacées !
+          <br />
+          Veuillez noter que les {{#if href == "/bd-admin/get/all-pages"}}pages{{#else}}messages{{/if}} supprimés ne peuvent
+          pas être récupérés !
+          <br />
+          Cette action est irréversible, la {{#if href == "/bd-admin/get/all-pages"}}page{{#else}}message{{/if}}
+          sera définitivement perdue si vous confirmez la suppression !
 			</p>
 
 			<form id="file-form-delete" action="/bd-admin/delete-file" method="post" hidden>
@@ -32,8 +32,8 @@
 			</form>
 		</div>
 		<div class="modal-footer">
-			<button class="cancel bd-button-grey">Cancel</button>
-			<button class="confirm bd-button-red" type="submit" form="file-form-delete">Delete</button>
+			<button class="cancel bd-button-grey">Annuler</button>
+			<button class="confirm bd-button-red" type="submit" form="file-form-delete">Supprimer</button>
 		</div>
 	</div>
 </div>

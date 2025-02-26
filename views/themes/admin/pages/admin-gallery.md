@@ -1,11 +1,11 @@
 ---
-title: Gallery
+title: Galerie
 description: "Add, delete, and use images"
 ---
 
-# Gallery
+# Galerie
 
-Toutes les images téléchargées dans la galerie de Blog-Doc sont stockées dans le dossier « images » du répertoire « static ». Vous pouvez accéder à ces images en utilisant un chemin similaire à : `/static/images/my-image.extension`
+Toutes les images téléchargées dans la galerie de SmartReduc sont stockées dans le dossier « images » du répertoire « static ». Vous pouvez accéder à ces images en utilisant un chemin similaire à : `/static/images/my-image.extension`
 
 ## Ajouter des images
 

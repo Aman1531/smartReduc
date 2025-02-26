@@ -2,7 +2,7 @@
 
 <form id="images-upload-form" action="/bd-admin/set-images" method="post" enctype="multipart/form-data">
 	<input type="file" name="files" accept="image/*" multiple />
-	<button type="submit" class="bd-button-grey">Upload</button>
+	<button type="submit" class="bd-button-grey">Télécharger</button>
 </form>
 
 <div class="image-gallery">
@@ -13,7 +13,7 @@
 		</div>
 		<div class="image-card__info">
 			<h3 class="image-card__name">{{imageName}}</h3>
-			<button type="button" class="image-card__delete-btn bd-button-red">Delete</button>
+			<button type="button" class="image-card__delete-btn bd-button-red">Supprimer</button>
 		</div>
 	</div>
 	{{/each}}

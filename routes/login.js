@@ -5,7 +5,7 @@ export const loginRoute = (app,pass) => {
     })
         .post("/login", async (req, res) => {
             if (pass == req.body.password)
-                res.redirect("/bd-admin");
+                res.redirect("/bd-admin/get/all-posts");
             else
                 res.redirect("/");
         })

@@ -1,10 +1,10 @@
 ---
-title: All Posts
+title: Tous Publications
 description: A table displaying all created posts
 href: "/bd-admin/get/all-posts"
 ---
 
-# All Posts
+# Tous Publications
 
 Tous les articles créés sont affichés dans un tableau avec pagination, affichant 5 articles par page.
 

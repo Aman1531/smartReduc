@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="/static/admin/styles/table.css" />
 
 <table-container>
-	<label for="searchInput">Search:</label>
+	<label for="searchInput">Recherche:</label>
 
 	{{#if href == "/bd-admin/get/all-pages"}}
 	<input type="text" id="searchInput" placeholder="Search for pages..." />
 	{{#else}}
-	<input type="text" id="searchInput" placeholder="Search for posts..." />
+	<input type="text" id="searchInput" placeholder="Recherche des messages..." />
 	{{/if}}
 
 	<table id="filesTable">
@@ -18,7 +18,7 @@
 							<button class="sort-button" aria-label="Sort by Title ascending">&#9650;</button>
 							<button class="sort-button" aria-label="Sort by Title descending">&#9660;</button>
 						</div>
-						Title
+						Titre
 					</div>
 				</th>
 				<th data-sort-type="string">
@@ -37,7 +37,7 @@
 							<button class="sort-button" aria-label="Sort by Tags ascending">&#9650;</button>
 							<button class="sort-button" aria-label="Sort by Tags descending">&#9660;</button>
 						</div>
-						Tags
+						Balises
 					</div>
 				</th>
 				<th data-sort-type="date">
@@ -46,7 +46,7 @@
 							<button class="sort-button" aria-label="Sort by Publish date ascending">&#9650;</button>
 							<button class="sort-button" aria-label="Sort by Publish date descending">&#9660;</button>
 						</div>
-						Publish date
+						Publier la date
 					</div>
 				</th>
 				{{/if}}
@@ -56,10 +56,10 @@
 							<button class="sort-button" aria-label="Sort by Published ascending">&#9650;</button>
 							<button class="sort-button" aria-label="Sort by Published descending">&#9660;</button>
 						</div>
-						Published
+						Publié
 					</div>
 				</th>
-				<th class="no-sort">Delete</th>
+				<th class="no-sort">Supprimer</th>
 			</tr>
 		</thead>
 		<tbody>

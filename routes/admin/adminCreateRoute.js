@@ -74,7 +74,7 @@ ${content}`
 
 		try {
 			await writeFile(fileFullPath, markdownContent)
-			res.redirect(redirectPath)
+			res.redirect("/bd-admin/edit/" + fileName)
 		} catch (error) {
 			console.error("Error writing file:", error)
 			res.status(500).json({ error: "Error creating file" })

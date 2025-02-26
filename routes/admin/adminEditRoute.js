@@ -71,10 +71,11 @@ ${content}`
 		const fileHREF = file.href // This is the file base name!
 		// Redirect depending on file published state
 		const redirectPath = file.published === "true" ? `/${fileDir}/${fileHREF}` : `/${fileDir}/preview/${fileHREF}`
-
+    
 		try {
 			await writeFile(fileFullPath, markdownContent)
-			res.redirect(redirectPath)
+      res.redirect(req.headers.referer)
+        
 		} catch (error) {
 			console.error("Error writing file:", error)
 			res.status(500).txt("Error updating file")

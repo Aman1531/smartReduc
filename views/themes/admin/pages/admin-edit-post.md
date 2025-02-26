@@ -5,20 +5,20 @@ description: "Edit post:"
 
 # Edit post: {{postTitle}}
 
-You have several options for updating this post. You can modify the following elements:
+Vous avez plusieurs options pour mettre à jour ce post. Vous pouvez modifier les éléments suivants :
 
--   **Title**: Update the post's title to reflect the content more accurately.
--   **Description**: Modify the post's description to better summarize what the post is about.
--   **Image**: Add a new image or change the existing one for the post.
--   **Publish Date**: Adjust the date when the post was published.
--   **Tags**: Add or update tags to categorize the post and improve discoverability.
--   **Publish State**: Adjust whether the post is published or in draft mode.
--   **Content**: Edit the main body of the post to update or add information.
+- **Title** : mettez à jour le titre du post pour refléter plus précisément le contenu.
+- **Description** : modifiez la description du post pour mieux résumer le sujet du post.
+- **Image** : ajoutez une nouvelle image ou modifiez l'image existante pour le post.
+- **Publish Date** : ajustez la date de publication du post.
+- **Tags** : ajoutez ou mettez à jour des tags pour catégoriser le post et améliorer la visibilité.
+- **Publish State** : indiquez si le post est publié ou en mode brouillon.
+- **Content** : modifiez le corps principal du post pour mettre à jour ou ajouter des informations.
 
-**Important Note**: The **URL path** for this post will remain unchanged even if you change the post title.
+**Remarque importante** : le **chemin d'accès URL** de ce post restera inchangé même si vous modifiez le titre du post.
 
-For example, if the original title of the post was **"My Post"** and you change it to **"My Awesome Post"**, the URL to access this post will still be:
+Par exemple, si le titre original de la publication était **"Mon article"** et que vous le remplacez par **"Mon article génial"**, l'URL pour accéder à cette publication sera toujours :
 
 **`https://domain.name/posts/my-post`**
 
-This URL is tied to the post’s unique identifier and remains consistent even if you update the title, ensuring that users can always access the post via the same link.
+Cette URL est liée à l'identifiant unique de la publication et reste cohérente même si vous mettez à jour le titre, garantissant ainsi que les utilisateurs peuvent toujours accéder à la publication via le même lien.
