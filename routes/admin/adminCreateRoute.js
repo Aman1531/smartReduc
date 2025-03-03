@@ -6,6 +6,8 @@ import { processTags } from "./utils/processTags.js"
 import { formatFileName } from "./utils/formatFileName.js"
 import { filterFrontmatter } from "./utils/filterFrontmatter.js"
 import { quoteSpecialFields } from "./utils/quoteSpecialFields.js"
+import ShortUniqueId from 'short-unique-id';
+
 
 export const adminCreateRoute = (app, settings, marked, join) => {
 	app.get("/bd-admin/add/:newFile", async (req, res) => {
@@ -41,9 +43,12 @@ export const adminCreateRoute = (app, settings, marked, join) => {
 		if (existsSync(pageFullPath) || existsSync(postFullPath)) {
 			return res.status(400).json({ error: "File already exists" })
 		}
+    const uid = new ShortUniqueId({ length: 10 });
 
 		let frontmatter = {
+      id: uid.rnd(), 
 			title: file.title.trim(),
+      category: file.category,
 			description: file.description.trim(),
 			featuredImage: file.image,
 			publish_date: file.publish_date,

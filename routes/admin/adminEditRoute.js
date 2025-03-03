@@ -39,6 +39,7 @@ export const adminEditRoute = (app, settings, marked, join) => {
 
 		let frontmatter = {
 			title: file.title,
+      category: file.category,
 			description: file.description,
 			featuredImage: file.image,
 			publish_date: file.publish_date,
