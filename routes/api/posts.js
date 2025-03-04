@@ -1,5 +1,5 @@
 import { processMarkdownPosts } from "../../functions/helpers/processMarkdownPosts.js"
-import { countPostsByTag, getPostsByTag } from "../../functions/helpers/processPostsTags.js"
+import { countPostsByTag, getPostsByTag ,getPostById , getPostsByCategory} from "../../functions/helpers/processPosts.js"
 
 
 export const apiRoutes = (app) => {
@@ -7,7 +7,18 @@ export const apiRoutes = (app) => {
         const posts = await processMarkdownPosts(app);
         res.writeHead(200, { "Content-Type": "application/json" })
         res.end(JSON.stringify(posts));
-    })
+     })
+        .get('/api/getPostById/:id',async (req , res) => {
+            const id = req.params.id
+            const post = await getPostById(app,id);
+            res.writeHead(200, { "Content-Type": "application/json"})
+            res.end(JSON.stringify(post))
+        })
+        .get('/api/getPostByCategory/:category' , async (req , res) => {
+            const posts = await getPostsByCategory(app,req.params.category)
+            res.writeHead(200, { "Content-Type": "application/json"})
+            res.end(JSON.stringify(posts))
+        })
    // tag routes
 	    .get("/api/tags", async (req, res) => {
 		    const tagsCount = await countPostsByTag(app)

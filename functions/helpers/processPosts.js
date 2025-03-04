@@ -5,6 +5,15 @@ import { processMarkdownPosts } from "./processMarkdownPosts.js"
  * @param {Object} app - LiteNode's instance.
  * @returns {Promise<Object>} An object with tags as keys and their counts as values.
  */
+async function getPostById(app,id) {
+    const posts = await processMarkdownPosts(app)
+    
+    return posts.find(p => id === p.frontmatter.id)
+}
+async function getPostsByCategory(app,category) {
+    const posts = await processMarkdownPosts(app)
+    return posts.filter(p => p.frontmatter.category === category)
+}
 async function countPostsByTag(app) {
 	try {
 		const posts = await processMarkdownPosts(app)
@@ -57,4 +66,4 @@ async function getPostsByTag(app, tag) {
 	}
 }
 
-export { countPostsByTag, getPostsByTag }
+export { countPostsByTag, getPostsByTag, getPostById ,getPostsByCategory}
